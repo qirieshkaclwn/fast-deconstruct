@@ -6,5 +6,6 @@
   "factorio_version": "2.1",
   "dependencies": ["base >= 2.0.0"],
   "description": "Instantly destroys selected structures and voids all their contents.",
-  "category": "Helper"
+  "category": "tweaks",
+  "homepage": "https://mods.factorio.com/mod/fast-deconstruct"
 }
