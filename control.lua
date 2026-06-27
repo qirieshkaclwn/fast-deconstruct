@@ -9,7 +9,7 @@ local function on_deconstructed(event)
   -- Check if they are holding our planner
   local item = player.cursor_stack
   local is_black_planner = false
-  if item and item.valid_for_read and item.name == "black-deconstruction-planner" then
+  if item and item.valid_for_read and item.name == "fast-deconstruct" then
     is_black_planner = true
   end
   

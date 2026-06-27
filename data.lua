@@ -1,13 +1,13 @@
 -- data.lua
 
-local black_planner = {
+local fast_planner = {
   type = "deconstruction-item",
-  name = "black-deconstruction-planner",
-  icon = "__black-deconstruction-planner__/graphics/black-deconstruction-planner.png",
+  name = "fast-deconstruct",
+  icon = "__fast-deconstruct__/graphics/black-deconstruction-planner.png",
   icon_size = 64,
   flags = {"spawnable", "always-show", "excluded-from-character-lift-weight"},
   subgroup = "tool",
-  order = "c[automated-construction]-b[black-deconstruction-planner]",
+  order = "c[automated-construction]-b[fast-deconstruct]",
   stack_size = 1,
   
   inventory_move_sound = {
@@ -31,6 +31,7 @@ local black_planner = {
     count_button_color = {r = 0.1, g = 0.1, b = 0.1},
     cursor_box_type = "not-allowed",
     mode = {"deconstruct", "any-entity", "any-tile"},
+    ignore_cannot_select_tiles = true,
     started_sound = { filename = "__core__/sound/deconstruct-select-start.ogg" },
     ended_sound = { filename = "__core__/sound/deconstruct-select-end.ogg" }
   },
@@ -40,6 +41,7 @@ local black_planner = {
     count_button_color = {r = 0.1, g = 0.1, b = 0.1},
     cursor_box_type = "not-allowed",
     mode = {"deconstruct", "any-entity", "any-tile"},
+    ignore_cannot_select_tiles = true,
     started_sound = { filename = "__core__/sound/deconstruct-select-start.ogg" },
     ended_sound = { filename = "__core__/sound/deconstruct-select-end.ogg" }
   },
@@ -58,19 +60,19 @@ local black_planner = {
   skip_fog_of_war = true
 }
 
-local black_planner_shortcut = {
+local fast_planner_shortcut = {
   type = "shortcut",
-  name = "give-black-deconstruction-planner",
-  order = "b[blueprints]-i[black-deconstruction-planner]",
+  name = "give-fast-deconstruct",
+  order = "b[blueprints]-i[fast-deconstruct]",
   action = "spawn-item",
-  item_to_spawn = "black-deconstruction-planner",
-  icon = "__black-deconstruction-planner__/graphics/shortcut-black-deconstruction-planner-x56.png",
+  item_to_spawn = "fast-deconstruct",
+  icon = "__fast-deconstruct__/graphics/shortcut-black-deconstruction-planner-x56.png",
   icon_size = 56,
-  small_icon = "__black-deconstruction-planner__/graphics/shortcut-black-deconstruction-planner-x24.png",
+  small_icon = "__fast-deconstruct__/graphics/shortcut-black-deconstruction-planner-x24.png",
   small_icon_size = 24
 }
 
 data:extend({
-  black_planner,
-  black_planner_shortcut
+  fast_planner,
+  fast_planner_shortcut
 })

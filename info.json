@@ -1,8 +1,8 @@
 {
-  "name": "black-deconstruction-planner",
+  "name": "fast-deconstruct",
   "version": "1.0.0",
-  "title": "Black Deconstruction Planner",
-  "author": "qirieshka",
+  "title": "Fast Deconstruct",
+  "author": "Antigravity",
   "factorio_version": "2.1",
   "dependencies": ["base >= 2.0.0"],
   "description": "Instantly destroys selected structures and voids all their contents.",

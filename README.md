@@ -1,4 +1,4 @@
-# Black Deconstruction Planner (Чёрный план удаления)
+# Fast Deconstruct (Быстрое удаление)
 
 A Factorio mod that adds a custom deconstruction tool to instantly delete (void) selected entities and all their contents, without using construction robots and without leaving any items or corpses on the ground.
 
@@ -23,7 +23,7 @@ A Factorio mod that adds a custom deconstruction tool to instantly delete (void)
 
 ## Installation / Установка
 
-1. Copy the folder `black-deconstruction-planner_1.0.0` into your Factorio `mods` directory.
+1. Copy the folder `fast-deconstruct_1.0.0` into your Factorio `mods` directory.
 2. Enable the mod in the in-game mod manager (or edit `mod-list.json`).
 3. Start or load a game.
 
@@ -31,7 +31,7 @@ A Factorio mod that adds a custom deconstruction tool to instantly delete (void)
 
 ## How to Use / Как использовать
 
-1. Click the **Get Black Deconstruction Planner** (Получить чёрный план удаления) button in your shortcut bar (bottom right, next to blueprints).
+1. Click the **Get Fast Deconstruct** (Получить быстрое удаление) button in your shortcut bar (bottom right, next to blueprints).
 2. Drag and select the area you want to clean up.
 3. To configure filters, right-click the planner in your hand or inventory.
 
@@ -39,7 +39,7 @@ A Factorio mod that adds a custom deconstruction tool to instantly delete (void)
 
 ## Technical Details / Технические детали
 
-* **Mod Name**: `black-deconstruction-planner`
+* **Mod Name**: `fast-deconstruct`
 * **Factorio Version**: `2.1`
 * **Item Type**: `deconstruction-item`
 * **Events Used**: `on_player_deconstructed_area` to detect selection and apply `entity.destroy()`.
